@@ -68,4 +68,16 @@ footer{
 }
 .news_list li{
     border-top:1px dotted#000;
+    padding:12px 0;
+}
+.news_date{
+    font-weight:bold;
+    margin-right:30px;
+}
+.banner{
+    float:left;
+    width:31%;
+}
+.banner img{
+    width:100%;
 }
