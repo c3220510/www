@@ -10,7 +10,7 @@ h1.q1::before{
   top: 0;
   bottom: 0;
   left: 2px;
-  width: 13px;    
+  width: 23px;    
   height: 13px;   
   border-radius: 50%;     
   background-color:aquamarine;
@@ -22,11 +22,10 @@ h1.q1::after{
   top: 0;
   bottom: 0;
   left: 8px;
-  width: 20px;
+  width: 10px;
   height: 10px;
   border-top: 3px solid #fff;
   border-right: 3px solid #fff;
-  -webkit-transform:rotate(45deg);
   transform: rotate(45deg);
 }
 body{
