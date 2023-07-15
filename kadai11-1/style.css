@@ -1,0 +1,30 @@
+@charset "UTF-8";
+h1.q1{
+    position: relative;
+  padding-left: 25px;
+}
+h1.q1::after{
+    content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2px;
+  width: 13px;    
+  height: 13px;   
+  border-top: 3px solid #000;     
+  border-right: 3px solid #000;  
+}
+
+body{
+    background-color:#fff;
+    color:#666;
+    font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,sans-serif;
+}
+
+h1{
+    font-family:"M PLUS 1p",sans-serif;
+    color:#333;
+    font-size:1.5rem;
+    line-height:1.25;
+}
