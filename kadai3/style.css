@@ -45,6 +45,12 @@ main{
 .main_goodpoints section img{
     width:100%;
 }
+.hotel{
+    width:200px;
+    padding:10px;
+    margin-top:20px;
+    float:left;
+}
 footer{
     display:flex;
     justify-content:space-between;
