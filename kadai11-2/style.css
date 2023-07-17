@@ -1,10 +1,10 @@
 @charset "UTF-8";
-h1.q1{
+h1.q2{
     position: relative;
     padding: 0.6em;
     background: #e0edff;
 }
-h1.q1:after {
+h1.q2:after {
     position: absolute;
     content: '';
     top: 100%;
