@@ -1,5 +1,6 @@
 @charset "UTF-8";
 h1.q2{
+    width: fit-content;
     position: relative;
     padding: 10px;
     background: aquamarine;
