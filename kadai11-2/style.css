@@ -1,7 +1,7 @@
 @charset "UTF-8";
 h1.q2{
     position: relative;
-    padding: 0.6em;
+    padding: 10px;
     background: aquamarine;
     color:#fff;
 }
