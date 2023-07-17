@@ -9,7 +9,7 @@ h1.q2:after {
     position: absolute;
     content: '';
     top: 100%;
-    left: 30px;
+    left: 5%;
     border: 15px solid transparent;
     border-top: 15px solid aquamarine;
     width: 0;
