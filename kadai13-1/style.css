@@ -1,8 +1,6 @@
 @charset "UTF-8";
 a.q1:hover{ 
-    padding: 10px;
-    border:1px solid #ff9f25;
-    background:#fff; 
+    color:#ff9f25;
 }
 
 body{
