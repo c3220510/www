@@ -10,7 +10,7 @@ h1.q1:after {
     top: 100%;
     left: 30px;
     border: 15px solid transparent;
-    border-top: 15px solid #e0edff;
+    border-top: 15px solid aquamarine;
     width: 0;
     height: 0;
 }
