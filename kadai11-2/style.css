@@ -3,6 +3,7 @@ h1.q2{
     position: relative;
     padding: 0.6em;
     background: aquamarine;
+    color:#fff;
 }
 h1.q2:after {
     position: absolute;
