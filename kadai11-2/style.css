@@ -12,8 +12,8 @@ h1.q2:after {
     left: 5%;
     border: 15px solid transparent;
     border-top: 15px solid aquamarine;
-    width: 100px;
-    height: 100px;
+    width: 0px;
+    height: 0px;
 }
 
 body{
