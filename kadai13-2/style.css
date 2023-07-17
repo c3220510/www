@@ -1,5 +1,5 @@
 @charset "UTF-8";
-a.q1:hover{ 
+a.q2:hover{ 
     color:#ff9f25;
     background-color:#ff9f25;
 }
@@ -17,11 +17,11 @@ a{
     height:50px;
     line-height:50px;
     padding-left:45px;
+    padding-right:45px;
     box-sizing:border-box;
 }
 
 a.q1{
-    background-color:#fff;
-    color:#ff9f25;
-    border:2px solod #ff9f25;
+    background-color:#ff9f25;
+    color:#fff;
 }
