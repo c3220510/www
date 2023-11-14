@@ -9,11 +9,16 @@
     <h1>座席の予約</h1>
     <p>東京会場<font color="red" id="rese">(予約受付中)</font></p>
     <button id="newButton">予約する</button>
+    <p id="btn2-text" class="hidden">ありがとうございました。</p>
     <script>
         document.getElementById("newButton").onclick = function() {
         document.getElementById("rese").innerHTML = "(予約済み)"
-        document.getElementById("rese").style.color="red";
-    }
+        document.getElementById("rese").style.color="red";}
+        const btn2 = document.getElementById('btn2');
+        const btn2Text = document.getElementById('btn2-text');
+        btn2.addEventListener('click', () => {
+            btn2Text.classList.toggle('hidden');
+        });
     </script>
 </body>
 </html>
