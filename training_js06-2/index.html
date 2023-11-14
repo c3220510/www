@@ -8,9 +8,11 @@
 <body>
     <h1>座席の予約</h1>
     <p>東京会場</p>
+    <p id="rese">予約受付中</p>
+    <button id="newButton">予約する</button>
     <script>
         document.getElementById("newButton").onclick = function() {
-    document.getElementById("happy").innerHTML = "Yeah"
+        document.getElementById("rese").innerHTML = "予約済み"
     }
     </script>
 </body>
