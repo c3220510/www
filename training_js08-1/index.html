@@ -7,13 +7,19 @@
 </head>
 <body>
   <h1>人口の多い国ランキング</h1>
-  <p id="list">1.中国</p>
-  <p id="list">2.インド</p>
-  <p id="list">3.アメリカ</p>
-  <p id="list">4.インドネシア</p>
+  <p id="list" class="hidden"></p>>1.中国</p>
+  <p id="list" class="hidden">2.インド</p>
+  <p id="list" class="hidden">3.アメリカ</p>
+  <p id="list" class="hidden">4.インドネシア</p>
   <button  id="button">国旗で表示</button>
+  <style>
+    .hidden{
+      display:none;
+    }
+  </style>
   <script>
      const btn = document.getElementById("button");
+     const list = document.getElementById("list");
      btn.addEventListener("click",function(){
       list.classList.toggle("hidden")
      });
