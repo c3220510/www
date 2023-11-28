@@ -7,22 +7,16 @@
 </head>
 <body>
   <h1>人口の多い国ランキング</h1>
-  <p id="cn1">1.中国</p>
-  <p id="cn2">2.インド</p>
-  <p id="cn3">3.アメリカ</p>
-  <p id="cn4">4.インドネシア</p>
-  <button  id="btn1">国旗で表示</button>
+  <p id="list">1.中国</p>
+  <p id="list">2.インド</p>
+  <p id="list">3.アメリカ</p>
+  <p id="list">4.インドネシア</p>
+  <button  id="button">国旗で表示</button>
   <script>
-   document.write('<img src="c3220510/www/training_js08-1/flag_CHN.png">');
-   document.write('<img src="c3220510/www/training_js08-1/"flag_IND.png">');
-   document.write('<img src="c3220510/www/training_js08-1/"flag_USA.png">');
-   document.write('<img src="c3220510/www/training_js08-1/"flag_IDN.png">');
-   document.getElementById("btn1").onclick = function(){
-    document.getElementById("cn1").p="flag_CHN.png";
-    document.getElementById("cn2").p="flag_IND.png";
-    document.getElementById("cn3").p="flag_USA.png";
-    document.getElementById("cn4").p="flag_IDN.png";
-  } 
+     const btn = document.getElementById("button");
+     btn.addEventListener("click",function(){
+      list.classList.toggle("hidden")
+     });
   </script>
 </body>
 </html>
