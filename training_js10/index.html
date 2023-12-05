@@ -8,7 +8,7 @@
 <body>
     <h3>問題</h3>
     <p>最も面積が大きい「県」は何県でしょう</p>
-    <button onclick="check(1)" id="btn">ヒントをみる</button>
+    <button onclick="check()" id="btn">ヒントをみる</button>
     <p>（注意）北海道は県ではありません。</p>
 
     <script>
@@ -16,11 +16,8 @@
         btn.addEventListener('click', () => {
         btn.textContent = '答えを見る';
         })
-        function check(x){
-            let text;
-            if(x==1){
-                text='東北地方にあります。';
-            }
+        function check(){
+            let text='東北地方にあります。'
         }
     </script>
 </body>
