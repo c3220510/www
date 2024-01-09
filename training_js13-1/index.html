@@ -22,12 +22,16 @@
     <script>
         function show(){
             let text = " "
-            let min = parseInt(prompt('範囲の最小値を1～10で入力してください'))
-            let max = parseInt(prompt('範囲の最大値を1～１０で入力してください'))
+            let min = parseInt(prompt('範囲の最小値を1～10で入力してください'));
+            let max = parseInt(prompt('範囲の最大値を1～１０で入力してください'));
+            if(min < 1 || max < 1 || max >= 10 || min%1 != 0 || max%1 != 0 || min > max){
+                alert('1~10の半角整数で範囲を指定してください。');
+                return;
+            }
             for(let i = min; i <= max; i++){
                 let flag = check(i);
                 if(flag) {
-                    text = min + max + 'で割り切れる数値は' + text + i + 'です';
+                    text = min + '~' + max + 'で割り切れる数値は' + text + i + 'です';
                 }
             }
             document.getElementById('message').textContent = text;
