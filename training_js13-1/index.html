@@ -31,7 +31,7 @@
             for(let i = min; i <= max; i++){
                 let flag = check(i);
                 if(flag) {
-                    text = min + '~' + max + 'で割り切れる数値は' + text + i + 'です';
+                    text = min + '~' + max + 'で割り切れる最小の数値は' + text + i + 'です';
                 }
             }
             document.getElementById('message').textContent = text;
