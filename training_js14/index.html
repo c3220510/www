@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>クイズゲーム</title>
 </head>
 <body>
-    
+  <h1 id="question">問題文</h1>
+  <ul id="choices"></ul>
+  <button id="nextBtn">次の問題へ</button>
+  <p>スコア：<span id="score">0</span></p>
+  <script>
+      const quizData = [
+     {
+       question: '日本の首都はどこ？',
+       choices: ['東京', '大阪', '名古屋', '福岡'],
+       answer: '東京'
+     },
+     {
+       question: '利根川は何県にある？',
+       choices: ['静岡県', '群馬県', '神奈川県', '長野県'],
+       answer: '群馬県'
+     }
+     ];
+     let currentQuestionIndex = 0;
+     let score = 0;
+     const questionEl = document.getElementById('question');
+     const choicesEl = document.getElementById('choices');
+     const nextBtn = document.getElementById('nextBtn');
+     const scoreEl = document.getElementById('score');
+     function showQuestion() {
+       const currentQuestion = quizData[currentQuestionIndex];
+       questionEl.textContent = currentQuestion.question;
+       choicesEl.innerHTML = '';
+
+     currentQuestion.choices.forEach((choice, index) => {
+     const li = document.createElement('li');
+     li.textContent = choice;
+     li.addEventListener('click', checkAnswer);
+     choicesEl.appendChild(li);
+     });
+     }
+     function checkAnswer(e) {
+     const selectedChoice = e.target.textContent;
+     const correctAnswer = quizData[currentQuestionIndex].answer;
+
+     if (selectedChoice === correctAnswer) {
+     score++;
+     scoreEl.textContent = score;
+     }
+
+     currentQuestionIndex++;
+
+     if (currentQuestionIndex < quizData.length) {
+      showQuestion();
+     } else {
+      alert(`クイズ終了！あなたのスコアは${score}点です。`);
+     }
+     }
+     nextBtn.addEventListener('click', showQuestion);
+     showQuestion();
+  </script>
 </body>
 </html>
